@@ -1,0 +1,28 @@
+#定义一个学生类，空类
+#类后面的括号可以为空，可以不为空
+class Student(): 
+	#一个空类，pass代表直接跳过，占一个位置
+	#此处pass必须有
+	pass
+
+#定义一个对象
+ricy = Student()
+
+#定义一个类，描述听python的学生
+class PythonStudent():
+	name = None
+	age = 8
+	course = "Python"
+
+	def dohomework(self):
+		print("I am doing my homework.")
+		#推荐在函数末尾使用return语句
+		return None
+
+#实例化,anne是一个具体的人
+anne = PythonStudent()
+anne.name
+anne.age
+
+#注意成员函数的调用没有传入参数
+anne.dohomework()
